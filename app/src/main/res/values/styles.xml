@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="activityMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bg2</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:configChanges">orientation</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="column">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="scoreText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/scoreTextPadding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="button1">
+        <item name="android:background">@color/colorButton1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button1Height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/buttonVerticalMargin</item>
+        <item name="android:layout_marginBottom">@dimen/buttonVerticalMargin</item>
+        <item name="android:layout_marginRight">@dimen/buttonHorizontalMargin</item>
+        <item name="android:layout_marginLeft">@dimen/buttonHorizontalMargin</item>
+        <item name="android:textSize">@dimen/button1TextSize</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="button2">
+        <item name="android:background">@color/colorButton2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button2Height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/buttonVerticalMargin</item>
+        <item name="android:layout_marginBottom">@dimen/buttonVerticalMargin</item>
+        <item name="android:layout_marginRight">@dimen/buttonHorizontalMargin</item>
+        <item name="android:layout_marginLeft">@dimen/buttonHorizontalMargin</item>
+        <item name="android:textSize">@dimen/button2TextSize</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="button3">
+        <item name="android:background">@color/colorButton2</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">@dimen/button3Width</item>
+        <item name="android:layout_height">@dimen/button3Height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/buttonVerticalMargin</item>
+        <item name="android:layout_marginBottom">@dimen/buttonVerticalMargin</item>
+        <item name="android:layout_marginRight">@dimen/buttonHorizontalMargin</item>
+        <item name="android:layout_marginLeft">@dimen/buttonHorizontalMargin</item>
+        <item name="android:textSize">@dimen/button3TextSize</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="card">
+        <item name="android:textSize">@dimen/cardTextSize</item>
+        <item name="android:drawablePadding">@dimen/cardDrawablePadding</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/cardVerticalMargin</item>
+        <item name="android:layout_marginBottom">@dimen/cardVerticalMargin</item>
+        <item name="android:layout_marginRight">@dimen/cardHorizontalMargin</item>
+        <item name="android:layout_marginLeft">@dimen/cardHorizontalMargin</item>
+    </style>
+
+    <style name="container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/menuPaddingVertical</item>
+        <item name="android:paddingBottom">@dimen/menuPaddingVertical</item>
+    </style>
+
+    <style name="teamMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="cardContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

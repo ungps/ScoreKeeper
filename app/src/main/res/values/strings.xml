@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="startScoreText">0 – 0</string>
+    <string name="startCardText">0</string>
+    <string name="Goal">Goal!</string>
+    <string name="yc">Yellow card</string>
+    <string name="rc">Red card</string>
+    <string name="reset">Reset</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+</resources>

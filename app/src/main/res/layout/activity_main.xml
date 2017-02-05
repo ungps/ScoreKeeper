@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/activityMain"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout style="@style/container">
+
+            <TextView
+                android:id="@+id/scoreText"
+                style="@style/scoreText"
+                android:text="@string/startScoreText" />
+
+            <LinearLayout style="@style/teamMenu">
+
+                <LinearLayout style="@style/column">
+
+                    <Button
+                        style="@style/button1"
+                        android:onClick="increaseScore"
+                        android:tag="-1"
+                        android:text="@string/Goal" />
+
+                    <Button
+                        style="@style/button2"
+                        android:onClick="increaseYellowCards"
+                        android:tag="-1"
+                        android:text="@string/yc" />
+
+                    <Button
+                        style="@style/button2"
+                        android:onClick="increaseRedCards"
+                        android:tag="-1"
+                        android:text="@string/rc" />
+
+                    <RelativeLayout style="@style/cardContainer">
+
+                        <TextView
+                            android:id="@+id/yellowCardsTextView1"
+                            style="@style/card"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/ycm"
+                            android:text="@string/startCardText" />
+
+                        <TextView
+                            android:id="@+id/redCardsTextView1"
+                            style="@style/card"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/rcm"
+                            android:text="@string/startCardText" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/column">
+
+                    <Button
+                        style="@style/button1"
+                        android:onClick="increaseScore"
+                        android:tag="1"
+                        android:text="@string/Goal" />
+
+                    <Button
+                        style="@style/button2"
+                        android:onClick="increaseYellowCards"
+                        android:tag="1"
+                        android:text="@string/yc" />
+
+                    <Button
+                        style="@style/button2"
+                        android:onClick="increaseRedCards"
+                        android:tag="1"
+                        android:text="@string/rc" />
+
+                    <RelativeLayout style="@style/cardContainer">
+
+                        <TextView
+                            android:id="@+id/yellowCardsTextView2"
+                            style="@style/card"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/ycm"
+                            android:text="@string/startCardText" />
+
+                        <TextView
+                            android:id="@+id/redCardsTextView2"
+                            style="@style/card"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/rcm"
+                            android:text="@string/startCardText" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/menu">
+
+                <Button
+                    style="@style/button3"
+                    android:drawableLeft="@drawable/restart"
+                    android:onClick="restartGame"
+                    android:text="@string/reset" />
+
+                <Button
+                    style="@style/button3"
+                    android:drawableLeft="@drawable/undo"
+                    android:onClick="undoLastAction"
+                    android:text="@string/undo" />
+
+                <Button
+                    style="@style/button3"
+                    android:drawableLeft="@drawable/redo"
+                    android:onClick="redoLastAction"
+                    android:text="@string/redo" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
