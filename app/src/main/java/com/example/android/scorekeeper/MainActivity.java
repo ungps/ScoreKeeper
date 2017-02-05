@@ -72,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String STATE_LEVEL = "LEVEL";
     private static final String STATE_TIMELINE = "TIMELINE";
 
+    // Declaring these TextViews and "finding" them in onCreate method to optimize the application
+    private TextView scoreTextView;
+    private TextView yellowCardsTextView1;
+    private TextView yellowCardsTextView2;
+    private TextView redCardsTextView1;
+    private TextView redCardsTextView2;
+
     /*
     // These strings were used to show some messages.
     private String SCORE_MESSAGE = "Score updated!";
@@ -82,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
     private String REDO_MESSAGE = "The last undoed action was redoed!";
     private String ERROR_MESSAGE = "Can't do that!";
     */
+
     /**
      * Saving the instance state because the main activity will destroy when screen
      * orientation is changed.
@@ -127,6 +135,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        scoreTextView = (TextView) findViewById(R.id.scoreText);
+        yellowCardsTextView1 = (TextView) findViewById(R.id.yellowCardsTextView1);
+        yellowCardsTextView2 = (TextView) findViewById(R.id.yellowCardsTextView2);
+        redCardsTextView1 = (TextView) findViewById(R.id.redCardsTextView1);
+        redCardsTextView2 = (TextView) findViewById(R.id.redCardsTextView2);
     }
 
     //Increasing first / second team's score and displaying it.
@@ -221,26 +235,21 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(MainActivity.this, RED_CARD_MESSAGE,  Toast.LENGTH_SHORT).show();
     }
 
-    //Updating the score and displaying a message.
+    //Updating the score.
     public void displayScore() {
-        TextView scoreTextView = (TextView) findViewById(R.id.scoreText);
         scoreTextView.setText(p1Score + " – " + p2Score);
     }
 
-    //Updating the number of yellow cards for both teams and displaying a message.
+    //Updating the number of yellow cards for both teams.
     public void displayYellowCards() {
-        TextView yellowCardsTextView = (TextView) findViewById(R.id.yellowCardsTextView1);
-        yellowCardsTextView.setText("" + p1YellowCards);
-        yellowCardsTextView = (TextView) findViewById(R.id.yellowCardsTextView2);
-        yellowCardsTextView.setText("" + p2YellowCards);
+        yellowCardsTextView1.setText("" + p1YellowCards);
+        yellowCardsTextView2.setText("" + p2YellowCards);
     }
 
-    //Updating the number of red cards for both teams and displaying a message.
+    //Updating the number of red cards for both teams.
     public void displayRedCards() {
-        TextView redCardsTextView = (TextView) findViewById(R.id.redCardsTextView1);
-        redCardsTextView.setText("" + p1RedCards);
-        redCardsTextView = (TextView) findViewById(R.id.redCardsTextView2);
-        redCardsTextView.setText("" + p2RedCards);
+        redCardsTextView1.setText("" + p1RedCards);
+        redCardsTextView2.setText("" + p2RedCards);
     }
 
     /**
